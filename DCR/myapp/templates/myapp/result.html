@@ -1,0 +1,15 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+
+<h1>Result Page</h1><hr>
+
+{% if result %}
+<p>Task ID: {{ result.id }}</p>
+<p>Task ID: {{ result.task_id }}</p>
+<p>Task State: {{ result.state }}</p>
+<p>Task Status: {{ result.status }}</p>
+<p>Result Value: {{ result.result }}</p>
+{% endif %}
+
+{% endblock content %}
